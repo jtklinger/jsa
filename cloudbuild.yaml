@@ -9,11 +9,11 @@ steps:
 
   # Build the Flask backend
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/$PROJECT_ID/job-alert-backend', 'backend']
+    args: ['build', '-t', 'gcr.io/moonlit-shadow-386118/job-alert-backend', 'backend']
 
   # Push images to Google Container Registry
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/$PROJECT_ID/job-alert-backend']
+    args: ['push', 'gcr.io/moonlit-shadow-386118/job-alert-backend']
 
   # Deploy to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
