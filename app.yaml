@@ -1,0 +1,11 @@
+runtime: python39  # Or the Python version you're using
+
+handlers:
+- url: /
+  static_files: frontend/build/index.html
+  upload: frontend/build/index.html
+- url: /static
+  static_dir: frontend/build/static
+- url: /(.*)
+  static_files: frontend/build/\1
+  upload: frontend/build/(.*)
