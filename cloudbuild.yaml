@@ -23,9 +23,9 @@ steps:
       - 'deploy'
       - 'job-alert-backend'  # Your Cloud Run service name
       - '--image'
-      - 'gcr.io/$PROJECT_ID/job-alert-backend'
+      - 'gcr.io/moonlit-shadow-386118/job-alert-backend'
       - '--region'
-      - 'your-region'  # Replace with your desired region
+      - 'us-east4'  # Replace with your desired region
       - '--platform'
       - 'managed'
       - '--allow-unauthenticated'  # If you don't need auth yet
